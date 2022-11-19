@@ -1,0 +1,93 @@
+/* 
+    Building Blocks
+
+    selector {
+        [Declaration Block]
+        property: value;
+    }
+
+    3 ways to target:
+    element, glass, id
+
+    * Order of "Final Response" Hierarchy
+    - !important
+    - Inline CSS
+    - ID Selectors
+    - Class Selectors
+    - Element
+*/
+
+nav {
+    /* we're targeting the element */
+    background-color: #d2d2d2;
+    /*
+    - preset colors: red blue yellow etc.
+    -rgb & rgba (red green blue alpha)
+        -alpha determines transparency
+        - ex: rgba (200, 15, 100, .5)
+    -Hexidecimal
+        - 16 digits: 0-9, A-F
+        can go from 0-9 or a-f per position
+        - ex: #d2d2d2
+    */
+    overflow: hidden;
+}
+    /* IDs */
+    #home{
+        float: left;
+        color: red !important;
+        /* Important will go with the last command if they are controlling the same attribute/element */
+    }  
+
+     /* Targeting a class: */
+
+    .btn {
+        float: right;
+        color: black;
+        text-align: center;
+        /*  width: 85px; */
+        padding: 14pxx 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /*
+    IDs- use hashtag, reference name given in HTML
+    href- can reference something inside or outside the document)
+    */
+    /* 
+    *Compound Operators
+    > refers to direct children of an element
+    , Matching selector
+    + Immediate sibling of an element
+    ~ Subsequent sibling of an element
+     */
+     nav .btn {
+        /* Points to the Nav and ANY class within it, or children of, named "btn" */
+        text-shadow: 2px 2px 2px rgba (0,0,0,.5);
+     }
+
+     div .paragraph > p {
+        /* targeting ant div with a class "paragraph" that is holding a <p> element */
+        color: red
+     }
+
+     .paragraph + div {
+        color: purple;
+     }
+
+     a:hover {
+        color: lightblue;
+        /* 
+        mousing over any anchor tag will alter its color
+        - "home" doesn't change due to importance
+        */
+     }
+
+     a:active {
+        color: purple;
+        text-shadow: 2px 2px 2px rgb (255,255,255);
+        /* COPY A BLOCK OF CODE IN VSCODE options+shift+down arrow 
+        MOVE A BLOCK OF CODE 
+        ALT+Down/Up Arrow*/
+     }
