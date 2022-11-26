@@ -43,12 +43,18 @@ nav {
 
     .btn {
         float: right;
-        color: black;
-        text-align: center;
-        /*  width: 85px; */
-        padding: 14pxx 16px;
-        text-decoration: none;
-        font-size: 17px;
+    color: black;
+    text-align: center;
+    /* width: 85px; */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 16px;
+    /* padding: 14px 16px 14px 16px; */
+    /* padding: 14px; */
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 17px;
     }
 
     /*
@@ -64,7 +70,7 @@ nav {
      */
      nav .btn {
         /* Points to the Nav and ANY class within it, or children of, named "btn" */
-        text-shadow: 2px 2px 2px rgba (0,0,0,.5);
+        text-shadow: 2px 2px 2px rgba(0,0,0,.5);
      }
 
      div .paragraph > p {
@@ -73,7 +79,7 @@ nav {
      }
 
      .paragraph + div {
-        color: purple;
+        color: rgb(6, 128, 0);
      }
 
      a:hover {
@@ -86,7 +92,7 @@ nav {
 
      a:active {
         color: purple;
-        text-shadow: 2px 2px 2px rgb (255,255,255);
+        text-shadow: 2px 2px 2px rgb(255,255,255);
         /* COPY A BLOCK OF CODE IN VSCODE options+shift+down arrow 
         MOVE A BLOCK OF CODE 
         ALT+Down/Up Arrow*/
