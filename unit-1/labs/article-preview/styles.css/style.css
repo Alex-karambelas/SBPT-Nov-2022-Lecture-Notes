@@ -1,0 +1,87 @@
+header {
+    background-color: grey;
+    text-align: center;
+    top: 0;
+    display: block;
+    padding: 3rem;
+    margin: 3em;
+}
+
+nav {
+    background-color: grey;
+    display: block;
+    margin: 3em;
+
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.flex-parent {
+    display: flex;
+    justify-content: space-between;
+    border: 1rem white;
+
+}
+
+.flex-container-1 {
+    display: flex;
+    width: 70%;
+    height: 100vh;
+    flex-direction: column;
+    border: 1rem white;
+    align-items: center;
+    border: 1rem white;
+}
+.flex-container-2 {
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    flex-direction: column;
+    border: 1rem white;
+    justify-content: space-around;
+}
+
+.header-1 {
+    background-color: grey;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    border: 1rem white;
+}
+.main-text {
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1rem white;
+}
+.footer {
+    border: 1rem white;
+    background-color: grey;
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+}
+  /*
+my flex-container-2 is overlapping everything else in small screen sizes- oh no! After wrestling with this for 5 hours I just had to call it. SOS!
+*/
+
+@media screen and (max-width: 500px) {
+   .flex-parent {
+    flex-wrap: wrap;
+    position: relative;
+   }
+    .flex-container-1 {
+        position: relative;
+    }
+    .flex-container-2{
+        position: absolute;
+    }
+}

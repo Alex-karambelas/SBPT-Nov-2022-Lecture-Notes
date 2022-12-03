@@ -1,0 +1,48 @@
+header {
+    background-color: grey;
+    text-align: center;
+    top: 0;
+    display: block;
+    padding: 3rem;
+    margin: 3em;
+}
+
+nav {
+    background-color: grey;
+    display: block;
+    margin: 3em;
+
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+li{
+    margin: 2rem;
+}
+
+.hero-image {
+height: 50vh;
+width: 75em;
+margin: 0em 0em 0em 3em;
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-row-gap: 3rem;
+    margin: 3em 0em 0em 3em;
+}
+footer {
+    background-color: grey;
+    text-align: center;
+    top: 0;
+    display: block;
+    padding: 3rem;
+    margin: 3em;
+}

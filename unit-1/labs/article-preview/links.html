@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css/style.css" rel="stylesheet">
+    <title>Article-Preview</title>
+</head>
+<header>Article Preview</header>
+<nav>
+  <ul>
+    <li><a href="/link1.html" class="btn">Link 1</a></li>
+    <li><a href="/link2.html" class="btn">Link 2</a></li>
+    <li><a href="/link3.html" class="btn">Link 3</a></li>
+    <li><a href="link4.html" class="btn">Link 4</a></li>
+  </ul>
+</nav>
+<body>
+    <div class="flex-container-1">
+        <div class= flex-column-1></div>
+             <div class="image-1">
+                  <img src="https://loremflickr.com/320/240" alt="image-placeholder-1">
+            </div>
+            <div class="header-1">MAIN ARTICLE HEADER</div>
+            <div class="main-text">MAIN TEXT</div>
+            <footer>FOOTER</footer>
+        </div>
+        <div class= flex-column-2></div>
+             <div class="image-2">
+                  <img src="https://loremflickr.com/320/240" alt="image-placeholder-1">
+            </div>
+            <div class="header-2">MAIN ARTICLE HEADER</div>
+            <div class="main-text-2">MAIN TEXT</div>
+            <footer>FOOTER</footer>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+.flex-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    border: 1px solid black;
+}
+
+.flex-column-1 {
+    width: 50%;
+     height: 100vh;
+     background-color: lightblue;
+     text-align: center;
+ }
+ .flex-column-2  {
+     width: 50%;
+     height: 100vh;
+     background-color: lightpink;
+     text-align: center;
+ }
+ /* below is for "play"*/
+ 
